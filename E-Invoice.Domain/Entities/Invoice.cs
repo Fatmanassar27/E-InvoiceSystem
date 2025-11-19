@@ -64,9 +64,6 @@ namespace E_Invoice.Domain.Entities
         public DateTime? ServiceDeliveryDate { get; set; }
         #endregion
 
-        #region Submission
        
-        //public virtual InvoiceSubmission? Submission { get; set; }
-        #endregion
     }
 }

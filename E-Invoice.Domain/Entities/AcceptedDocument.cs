@@ -2,7 +2,7 @@
 {
     public class AcceptedDocument
     {
-        [Key]
+        [Key] 
         public int Id { get; set; }
         [Required, MaxLength(26)]
         public string Uuid { get; set; } 

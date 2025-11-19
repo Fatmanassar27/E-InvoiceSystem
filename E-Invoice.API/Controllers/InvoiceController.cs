@@ -79,8 +79,29 @@ namespace E_Invoice.API.Controllers
 
         #endregion
 
-        #region Get Document
+        #region cancel document
+        [Authorize(Roles = "Admin")]
+        [HttpPut("cancel/{uuid}")]
+        public async Task<IActionResult> CancelInvoice(string uuid)
+        {
+            try
+            {
+                await _submissionService.CancelDocument(uuid);
+              
+                return Ok(new { message = $"Invoice {uuid} cancelled successfully." });
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { error = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
 
         #endregion
+
+
     }
 }

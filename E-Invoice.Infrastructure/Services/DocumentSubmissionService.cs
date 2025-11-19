@@ -5,6 +5,7 @@ using E_Invoice.Application.DTOs.SubmissionDtos;
 using E_Invoice.Application.Interfaces;
 using E_Invoice.Application.Services;
 using E_Invoice.Domain.Entities;
+using E_Invoice.Domain.Enums;
 
 namespace E_Invoice.Infrastructure.Services
 {
@@ -49,7 +50,8 @@ namespace E_Invoice.Infrastructure.Services
                     DocumentSubmission = submission,
                     InternalId = invoice.InternalId,
                     Uuid = Guid.NewGuid().ToString().Substring(0, 26),
-                    LongId = Guid.NewGuid().ToString()
+                    LongId = Guid.NewGuid().ToString(),
+                    Status = StatusEnums.Accepted.ToString(),
                 };
 
                 submission.Documents.Add(accepted);
@@ -61,7 +63,8 @@ namespace E_Invoice.Infrastructure.Services
                 response.RejectedDocuments.Add(new RejectedDocumentDto
                 {
                     InternalId = failed.Invoice.InternalId,
-                    Errors = failed.Errors
+                    Errors = failed.Errors,
+                    Status = StatusEnums.Rejected.ToString()
                 });
             }
 
@@ -73,7 +76,19 @@ namespace E_Invoice.Infrastructure.Services
 
             return response;
         }
+        public async Task CancelDocument(string Uuid)
+        {
+            var repo = _unitOfWork.AcceptedDocumentRepository;
 
+            var existingDoc = await repo.GetAcceptedDocumentByUuidAsync(Uuid);
+            if(existingDoc == null)
+               throw new KeyNotFoundException("Document not found");
+
+            existingDoc.Status = StatusEnums.Cancelled.ToString();
+            repo.Update(existingDoc);
+
+            await _unitOfWork.SaveChangesAsync();
+        }
     }
 }
 

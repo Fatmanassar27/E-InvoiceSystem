@@ -8,6 +8,7 @@ using E_Invoice.Application.Services;
 using E_Invoice.Application.Services.identitiy_services;
 using E_Invoice.Application.Validators;
 using E_Invoice.Infrastructure.Configurations;
+using E_Invoice.Infrastructure.Identity;
 using E_Invoice.Infrastructure.Providers;
 using E_Invoice.Infrastructure.Repositories.identity;
 using E_Invoice.Infrastructure.Services;
@@ -20,7 +21,7 @@ namespace E_Invoice.API
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -112,17 +113,14 @@ namespace E_Invoice.API
             builder.Services.AddOpenApi();
             #endregion
 
-            #region Services
-            builder.Services.AddAutoMapper(typeof(InvoiceProfile).Assembly);
-
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IInvoiceService, InvoiceService>();
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
-            builder.Services.AddScoped<IAuthService, AuthService>();
-            builder.Services.AddScoped<IDocumentSubmissionService, DocumentSubmissionService>();
-            #endregion
+           
 
             var app = builder.Build();
+            using (var scope = app.Services.CreateScope())
+            {
+                var seeder = scope.ServiceProvider.GetRequiredService<IdentitySeeder>();
+                await seeder.SeedRolesAsync();
+            }
 
             if (app.Environment.IsDevelopment())
             {

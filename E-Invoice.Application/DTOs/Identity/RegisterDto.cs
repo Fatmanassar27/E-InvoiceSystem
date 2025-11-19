@@ -1,4 +1,6 @@
-﻿namespace E_Invoice.Application.DTOs.Identity
+﻿using E_Invoice.Domain.Enums;
+
+namespace E_Invoice.Application.DTOs.Identity
 {
     public class RegisterDto
     {
@@ -12,6 +14,7 @@
 
         [Required(ErrorMessage = "UserName is required")]
         public string UserName { get; set; } = string.Empty;
+        public RolesEnum Role { get; set; }
 
     }
 

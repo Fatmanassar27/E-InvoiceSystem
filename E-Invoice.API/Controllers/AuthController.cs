@@ -1,5 +1,6 @@
 ﻿using E_Invoice.Application.DTOs.Identity;
 using E_Invoice.Application.Services.identitiy_services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Invoice.API.Controllers
@@ -38,6 +39,8 @@ namespace E_Invoice.API.Controllers
 
             return Ok(new { Token = token });
         }
+
+
     }
 
 

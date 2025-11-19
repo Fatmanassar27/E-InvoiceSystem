@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace E_Invoice.Infrastructure.Identity
 {
-    public class IdentityDbContext : IdentityDbContext<ApplicationUser>
+    public class IdentityDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         public IdentityDbContext(DbContextOptions<IdentityDbContext> options)
         : base(options)

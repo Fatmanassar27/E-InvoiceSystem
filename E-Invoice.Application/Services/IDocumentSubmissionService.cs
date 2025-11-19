@@ -6,6 +6,6 @@ namespace E_Invoice.Application.Services
     public interface IDocumentSubmissionService
     {
         Task<DocumentSubmissionResponseDto> SubmitDocumentsAsync(IEnumerable<InvoiceDto> validInvoices, IEnumerable<(InvoiceDto Invoice, Dictionary<string, string[]> Errors)> failedInvoices);
-
+        Task CancelDocument(string Uuid);
     }
 }

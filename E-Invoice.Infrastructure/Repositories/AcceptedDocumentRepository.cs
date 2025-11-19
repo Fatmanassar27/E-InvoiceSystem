@@ -18,5 +18,12 @@ namespace E_Invoice.Infrastructure.Repositories
             return await _dbcontext.AcceptedDocuments
                 .FirstOrDefaultAsync(a => a.InvoiceId == invoiceId);
         }
+       
+        public async Task<AcceptedDocument?> GetAcceptedDocumentByUuidAsync(string Uuid)
+        {
+            return await _dbcontext.AcceptedDocuments
+                .FirstOrDefaultAsync(a => a.Uuid == Uuid);
+        }
+
     }
 }

@@ -4,5 +4,6 @@
     {
         public string InternalId { get; set; }
         public object Errors { get; set; }
+        public string Status { get; set; }
     }
 }

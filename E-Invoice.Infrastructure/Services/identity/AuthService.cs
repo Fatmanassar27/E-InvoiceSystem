@@ -37,6 +37,7 @@ namespace E_Invoice.Infrastructure.Services.identity
 
             if (!result.Succeeded)
                 throw new Exception(string.Join(", ", result.Errors.Select(e => e.Description)));
+            await _userManager.AddToRoleAsync(user, "User");
         }
 
         public async Task<string?> LoginAsync(string email, string password)
@@ -46,15 +47,22 @@ namespace E_Invoice.Infrastructure.Services.identity
             if (user == null || !await _userManager.CheckPasswordAsync(user, password))
                 return null;
 
+            var userRoles = await _userManager.GetRolesAsync(user); 
+
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id),
+        new Claim(ClaimTypes.Name, user.Email)
+    };
+
+            // إضافة كل Role كـ claim
+            claims.AddRange(userRoles.Select(role => new Claim(ClaimTypes.Role, role)));
+
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new[]
-                {
-                new Claim(ClaimTypes.NameIdentifier, user.Id),
-                new Claim(ClaimTypes.Name, user.Email)
-            }),
+                Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.UtcNow.AddMinutes(Convert.ToDouble(_configuration["Jwt:DurationInMinutes"])),
                 Issuer = _configuration["Jwt:Issuer"],
                 Audience = _configuration["Jwt:Audience"],
@@ -64,6 +72,7 @@ namespace E_Invoice.Infrastructure.Services.identity
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
     }
 
 }

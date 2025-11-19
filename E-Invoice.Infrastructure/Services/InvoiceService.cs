@@ -3,6 +3,7 @@ using E_Invoice.Application.DTOs;
 using E_Invoice.Application.Interfaces;
 using E_Invoice.Application.Services;
 using E_Invoice.Domain.Entities;
+using E_Invoice.Domain.Enums;
 
 namespace E_Invoice.Infrastructure.Services
 {
@@ -11,7 +12,7 @@ namespace E_Invoice.Infrastructure.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public InvoiceService(IUnitOfWork unitOfWork , IMapper mapper)
+        public InvoiceService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -20,8 +21,8 @@ namespace E_Invoice.Infrastructure.Services
         {
             var repo = _unitOfWork.GetRepository<Invoice, int>();
             var invoices = await repo.GetAllAsync();
-            return  invoices;
-        } 
+            return invoices;
+        }
         public async Task<Invoice?> GetInvoiceByIdAsync(int id)
         {
             var repo = _unitOfWork.GetRepository<Invoice, int>();
@@ -58,5 +59,6 @@ namespace E_Invoice.Infrastructure.Services
             await _unitOfWork.SaveChangesAsync();
         }
 
+       
     }
 }
