@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace E_Invoice.Application.DTOs.Document_Dtos
+{
+    public class DocumentExtendedDto
+    {
+        public string Uuid { get; set; }
+        public string SubmissionUUID { get; set; }
+        public string LongId { get; set; }
+        public string InternalId { get; set; }
+        public string TypeName { get; set; }
+        public string TypeVersionName { get; set; }
+        public string IssuerId { get; set; }
+        public string IssuerName { get; set; }
+        public string ReceiverId { get; set; }
+        public string ReceiverName { get; set; }
+        public DateTime DateTimeIssued { get; set; }
+        public DateTime DateTimeReceived { get; set; }
+        public decimal TotalSales { get; set; }
+        public decimal TotalDiscount { get; set; }
+        public decimal NetAmount { get; set; }
+        public decimal Total { get; set; }
+        public string Status { get; set; }
+        public string LateSubmissionRequestNumber { get; set; }
+        public object Document { get; set; }
+        public string TransformationStatus { get; set; }
+    }
+
+}

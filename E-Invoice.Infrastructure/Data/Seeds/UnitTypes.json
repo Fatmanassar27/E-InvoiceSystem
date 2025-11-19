@@ -1,0 +1,722 @@
+﻿[
+    {
+        "Code": "2Z",
+        "Desc_en": "Millivolt ( mV )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "4K",
+        "Desc_en": "Milliampere ( mA )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "4O",
+        "Desc_en": "Microfarad ( microF )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "A87",
+        "Desc_en": "Gigaohm ( GOhm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "A93",
+        "Desc_en": "Gram/Cubic meter ( g/m3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "A94",
+        "Desc_en": "Gram/cubic centimeter ( g/cm3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "AMP",
+        "Desc_en": "Ampere ( A )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "ANN",
+        "Desc_en": "Years ( yr )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "B22",
+        "Desc_en": "Kiloampere ( kA )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "B49",
+        "Desc_en": "Kiloohm ( kOhm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "B75",
+        "Desc_en": "Megohm ( MOhm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "B78",
+        "Desc_en": "Megavolt ( MV )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "B84",
+        "Desc_en": "Microampere ( microA )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BAR",
+        "Desc_en": "bar ( bar )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BBL",
+        "Desc_en": "Barrel (oil 42 gal.)",
+        "Desc_ar": "برميل"
+    },
+    {
+        "Code": "BG",
+        "Desc_en": "Bag ( Bag )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BO",
+        "Desc_en": "Bottle ( Bt. )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BOX",
+        "Desc_en": "Box",
+        "Desc_ar": "صندوق"
+    },
+    {
+        "Code": "C10",
+        "Desc_en": "Millifarad ( mF )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "C39",
+        "Desc_en": "Nanoampere ( nA )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "C41",
+        "Desc_en": "Nanofarad ( nF )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "C45",
+        "Desc_en": "Nanometer ( nm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "C62",
+        "Desc_en": "Activity unit ( AU )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CA",
+        "Desc_en": "Canister ( Can )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CMK",
+        "Desc_en": "Square centimeter ( cm2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CMQ",
+        "Desc_en": "Cubic centimeter ( cm3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CMT",
+        "Desc_en": "Centimeter ( cm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CS",
+        "Desc_en": "Case ( Case )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CT",
+        "Desc_en": "Carton ( Car )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CTL",
+        "Desc_en": "Centiliter ( Cl )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "D10",
+        "Desc_en": "Siemens per meter ( S/m )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "D33",
+        "Desc_en": "Tesla ( D )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "D41",
+        "Desc_en": "Ton/Cubic meter ( t/m3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "DAY",
+        "Desc_en": "Days ( d )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "DMT",
+        "Desc_en": "Decimeter ( dm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "DRM",
+        "Desc_en": "DRUM",
+        "Desc_ar": "أسطوانة"
+    },
+    {
+        "Code": "EA",
+        "Desc_en": "each (ST) ( ST )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "FAR",
+        "Desc_en": "Farad ( F )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "FOT",
+        "Desc_en": "Foot ( Foot )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "FTK",
+        "Desc_en": "Square foot ( ft2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "FTQ",
+        "Desc_en": "Cubic foot ( ft3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "G42",
+        "Desc_en": "Microsiemens per centimeter ( microS/cm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "GL",
+        "Desc_en": "Gram/liter ( g/l )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "GLL",
+        "Desc_en": "gallon ( gal )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "GM",
+        "Desc_en": "Gram/square meter ( g/m2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "GPT",
+        "Desc_en": "Gallon per thousand",
+        "Desc_ar": "جالون/الف"
+    },
+    {
+        "Code": "GRM",
+        "Desc_en": "Gram ( g )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "H63",
+        "Desc_en": "Milligram/Square centimeter ( mg/cm2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "HHP",
+        "Desc_en": "Hydraulic Horse Power",
+        "Desc_ar": "قوة حصان هيدروليكي"
+    },
+    {
+        "Code": "HLT",
+        "Desc_en": "Hectoliter ( hl )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "HTZ",
+        "Desc_en": "Hertz (1/second) ( Hz )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "HUR",
+        "Desc_en": "Hours ( hrs )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "IE",
+        "Desc_en": "Number of Persons ( PRS )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "INH",
+        "Desc_en": "Inch ( “” )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "INK",
+        "Desc_en": "Square inch ( Inch2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "JOB",
+        "Desc_en": "JOB",
+        "Desc_ar": "وظيفة"
+    },
+    {
+        "Code": "KGM",
+        "Desc_en": "Kilogram ( KG )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KHZ",
+        "Desc_en": "Kilohertz ( kHz )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KMH",
+        "Desc_en": "Kilometer/hour ( km/h )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KMK",
+        "Desc_en": "Square kilometer ( km2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KMQ",
+        "Desc_en": "Kilogram/cubic meter ( kg/m3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KMT",
+        "Desc_en": "Kilometer ( km )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KSM",
+        "Desc_en": "Kilogram/Square meter ( kg/m2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KVT",
+        "Desc_en": "Kilovolt ( kV )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KWT",
+        "Desc_en": "Kilowatt ( KW )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "LB",
+        "Desc_en": "pounds ",
+        "Desc_ar": "رطل"
+    },
+    {
+        "Code": "LTR",
+        "Desc_en": "Liter ( l )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "LVL",
+        "Desc_en": "Level",
+        "Desc_ar": "مستوي"
+    },
+    {
+        "Code": "M",
+        "Desc_en": "Meter ( m )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MAN",
+        "Desc_en": "Man",
+        "Desc_ar": "رجل"
+    },
+    {
+        "Code": "MAW",
+        "Desc_en": "Megawatt ( VA )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MGM",
+        "Desc_en": "Milligram ( mg )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MHZ",
+        "Desc_en": "Megahertz ( MHz )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MIN",
+        "Desc_en": "Minute ( min )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MMK",
+        "Desc_en": "Square millimeter ( mm2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MMQ",
+        "Desc_en": "Cubic millimeter ( mm3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MMT",
+        "Desc_en": "Millimeter ( mm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MON",
+        "Desc_en": "Months ( Months )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MTK",
+        "Desc_en": "Square meter ( m2 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MTQ",
+        "Desc_en": "Cubic meter ( m3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "OHM",
+        "Desc_en": "Ohm ( Ohm )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "ONZ",
+        "Desc_en": "Ounce ( oz )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PAL",
+        "Desc_en": "Pascal ( Pa )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PF",
+        "Desc_en": "Pallet ( PAL )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PK",
+        "Desc_en": "Pack ( PAK )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "SK",
+        "Desc_en": "Sack",
+        "Desc_ar": "كيس"
+    },
+    {
+        "Code": "SMI",
+        "Desc_en": "Mile ( mile )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "ST",
+        "Desc_en": "Ton (short,2000 lb)",
+        "Desc_ar": "طن (قصير,2000)"
+    },
+    {
+        "Code": "TNE",
+        "Desc_en": "Tonne ( t )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "TON",
+        "Desc_en": "Ton (metric)",
+        "Desc_ar": "طن (متري)"
+    },
+    {
+        "Code": "VLT",
+        "Desc_en": "Volt ( V )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "WEE",
+        "Desc_en": "Weeks ( Weeks )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "WTT",
+        "Desc_en": "Watt ( W )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "X03",
+        "Desc_en": "Meter/Hour ( m/h )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "YDQ",
+        "Desc_en": "Cubic yard ( yd3 )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "YRD",
+        "Desc_en": "Yards ( yd )",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "NMP",
+        "Desc_en": "Number of packs",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "ST",
+        "Desc_en": "Sheet",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "5I",
+        "Desc_en": "Standard cubic foot",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "AE",
+        "Desc_en": "Ampere per metre",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "B4",
+        "Desc_en": "Barrel, Imperial",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BB",
+        "Desc_en": "Base box",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BD",
+        "Desc_en": "Board",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BE",
+        "Desc_en": "Bundle",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BK",
+        "Desc_en": "Basket",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "BL",
+        "Desc_en": "Bale",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CH",
+        "Desc_en": "Container",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "CR",
+        "Desc_en": "Crate",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "DAA",
+        "Desc_en": "Decare",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "DTN",
+        "Desc_en": "Decitonne",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "DZN",
+        "Desc_en": "Dozen",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "FP",
+        "Desc_en": "Pound per square foot",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "HMT",
+        "Desc_en": "Hectometre",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "INQ",
+        "Desc_en": "Cubic inch",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KG",
+        "Desc_en": "Keg",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "KTM",
+        "Desc_en": "Kilometre",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "LO",
+        "Desc_en": "Lot [unit of procurement]",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MLT",
+        "Desc_en": "Millilitre",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "MT",
+        "Desc_en": "Mat",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "NA",
+        "Desc_en": "Milligram per kilogram",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "NAR",
+        "Desc_en": "Number of articles",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "NC",
+        "Desc_en": "Car",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "NE",
+        "Desc_en": "Net litre",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "NPL",
+        "Desc_en": "Number of parcels",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "NV",
+        "Desc_en": "Vehicle",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PA",
+        "Desc_en": "Packet",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PG",
+        "Desc_en": "Plate",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PL",
+        "Desc_en": "Pail",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PR",
+        "Desc_en": "Pair",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "PT",
+        "Desc_en": "Pint (US)",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "RL",
+        "Desc_en": "Reel",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "RO",
+        "Desc_en": "Roll",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "SET",
+        "Desc_en": "Set",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "STK",
+        "Desc_en": "Stick, Cigarette ",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "T3",
+        "Desc_en": "Thousand piece",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "TC",
+        "Desc_en": "Truckload",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "TK",
+        "Desc_en": "Tank, rectangular",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "TN",
+        "Desc_en": "Tin",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "TTS",
+        "Desc_en": "Ten thousand sticks",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "UC",
+        "Desc_en": "Telecommunication port ",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "VI",
+        "Desc_en": "Vial",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "VQ",
+        "Desc_en": "Bulk",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "YDK",
+        "Desc_en": "Square yard",
+        "Desc_ar": ""
+    },
+    {
+        "Code": "Z3",
+        "Desc_en": "Cask",
+        "Desc_ar": ""
+    }
+]
